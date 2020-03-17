@@ -41,6 +41,7 @@ def getarticle(url):
     # url = "https://wenku.baidu.com/view/62906818227916888486d74f.html?rec_flag=default"                                     # 新版doc
     # url = "https://wenku.baidu.com/view/ccfb5a96ba68a98271fe910ef12d2af90242a8f5.html?from=search"                          # 新版txt
     # url = input('请输入要下载的文库URL地址')
+    # return ["123", "456"]
     content = fetch_url(url)
     verjud(content)
     message = []
