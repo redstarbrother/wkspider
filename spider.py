@@ -25,7 +25,7 @@ def fetch_url(url):
 def verjud(content):
     if version[0] == 0:
         version[1] = re.findall(r"docType.*?\:.*?\'(.*?)\'\,", content)[0]      # 通过正则获取文档类型
-        print(version[1])
+        # print(version[1])
         # print(type(version[1]))
     else:
         if "indexXreader" in content:

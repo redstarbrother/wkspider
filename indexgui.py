@@ -11,7 +11,7 @@ appWidth1 = scnWidth/6
 appHeight1 = scnHeight/6
 appWidth2 = scnWidth/3
 appHeight2 = scnHeight/1.5
-print(appHeight2)
+# print(appHeight2)
 window.geometry("%dx%d+%d+%d"%(appWidth1, appHeight1, scnWidth/2-appWidth1/2, scnHeight/2-appHeight1/2))   # 设置窗口大小并居中
 
 
@@ -27,7 +27,7 @@ def extract():
     mes.clear()
     readnum = 1
     link = url.get()
-    print(link)
+    # print(link)
     window.geometry("%dx%d+%d+%d" % (appWidth2, appHeight2, scnWidth/2-appWidth2/2, scnHeight/2-appHeight2/2))   # 设置窗口大小并居中
     url.pack_forget()
     button.pack_forget()

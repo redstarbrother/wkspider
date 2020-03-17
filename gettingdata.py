@@ -69,7 +69,7 @@ def new_txt(content):
     resign = re.findall("\"rsign\":\"(.*?)\"", content)[0]          # 获取resign值
     url = "https://wkretype.bdimg.com/retype/text/" + txtId + "?md5sum=" + md5 + "&sign=" + sign + "&callback=cb&pn=1&rn=" + pageNum +\
         "&type=txt&rsign=" + resign                                 # 拼接字符串获取文档链接
-    print(url)
+    # print(url)
     # text = requests.get(url).content.decode('gbk')
     txtcontent = json.loads(fetch_url(url)[3:-1])               # 加载json格式文档
     result = []
